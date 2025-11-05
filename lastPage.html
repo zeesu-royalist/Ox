@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Air Pollution</title>
+    <link rel="stylesheet" href="/assets/css/lastPage.css">
+    <link rel="stylesheet" href="/assets/css/newNav.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+</head>
+
+<body>
+
+    <!-- Top Left Logo Section -->
+    <div class="header-left">
+        <div class="brand-wrap">
+            <img src="/assets/images/logo0.png" alt="Airship Logo" class="brand-logo">
+            <div class="brand-text">
+                <div class="brand-name">AIRSHIP</div>
+                <div class="brand-tagline">Pollution Free Space</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Right Menu Button -->
+    <div class="header-right">
+        <button class="nav-toggle" id="navOpenBtn">
+            <span style="margin-left: 5px;">Menu</span>
+            <span id="navIcon" class="nav-hamburger">≡</span>
+        </button>
+    </div>
+
+    <!-- Full Screen Menu Overlay -->
+    <div class="nav-overlay" id="navOverlay">
+        <div class="header-right">
+            <button class="nav-toggle" id="navCloseBtn">
+                <span class="nav-close-icon">×</span>
+            </button>
+        </div>
+
+        <div class="nav-left">
+            <a href="#">Home</a>
+            <a href="#">Air Pollution</a>
+            <a href="#">Oxidative Stress</a>
+            <a href="#">AIRSHIP</a>
+            <a href="#">Resources</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">FAQs</a>
+            <a href="#">Blog</a>
+            <a href="#">Library</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+
+    <button class="book-appointment">
+        Book Appointment
+        <div class="arrow-icon">↗</div>
+    </button>
+    <!-- New End here--------------------------------- -->
+
+
+    <div class="container">
+        <h1><span class="types">Types</span> of Air Pollution</h1>
+
+        <p class="subtitle">There are primarily two types of air pollution.</p>
+
+        <div class="content-wrapper">
+            <div class="pollution-section">
+                <h2 class="section-title">Outdoor Pollution</h2>
+                <div class="image-container">
+                    <img src="/assets/images/7m.png" alt="Outdoor Pollution Diagram" class="outdoor-image">
+                </div>
+                <p class="description">
+                    Outdoor Pollution is the presence in the air of one or more substances at a concentration or for a
+                    duration above their natural levels, with the potential to produce an adverse effect.
+                </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="pollution-section">
+                <h2 class="section-title">Indoor Pollution</h2>
+                <div class="indoor-container">
+                    <div class="image-container">
+                        <img src="https://img.freepik.com/free-vector/charming-house-with-tree-illustration_1308-176337.jpg"
+                            alt="Outdoor Pollution Diagram" class="outdoor-image">
+                    </div>
+                </div>
+                <p class="description">
+                    Indoor air pollution is the quality of air within buildings and structures, and the impact it has on
+                    the health and comfort of people who live there.
+                </p>
+            </div>
+        </div>
+
+        <p class="bottom-text">
+            Together, these sources produce <span class="highlight">45</span> different major types of pollutants that
+            are responsible for increased air toxicity in India.
+        </p>
+
+        <p class="bottom-text" style="margin-top: 60px;">
+            These <span class="highlight">45</span> pollutants are classified into FOUR major categories.
+        </p>
+
+
+
+
+        <!-- /* Dropdown --------------------------------------------------------*/ -->
+
+        <div class="gap"></div>
+        <div class="container">
+            <div class="pollutant-item">
+                <div class="pollutant-row">
+                    <div class="pollutant-label" onclick="toggleDropdown(0)">
+                        <span class="pollutant-title">Primary Pollutants</span>
+                        <span class="chevron" id="chevron-0">⌄</span>
+                    </div>
+                    <div class="pollutant-description" id="desc-0">
+                        are emitted directly from sources such as industrial facilities, automobiles and forest fires.
+                    </div>
+                </div>
+            </div>
+
+            <div class="pollutant-item">
+                <div class="pollutant-row">
+                    <div class="pollutant-label" onclick="toggleDropdown(1)">
+                        <span class="pollutant-title">Secondary Pollutants</span>
+                        <span class="chevron" id="chevron-1">⌄</span>
+                    </div>
+                    <div class="pollutant-description" id="desc-1">
+                        are formed through chemical reactions between primary pollutants and other substances in the
+                        atmosphere, often with the help of sunlight.
+                    </div>
+                </div>
+            </div>
+
+            <div class="pollutant-item">
+                <div class="pollutant-row">
+                    <div class="pollutant-label" onclick="toggleDropdown(2)">
+                        <span class="pollutant-title">Persistent Organic<br>Pollutants (POPs)</span>
+                        <span class="chevron" id="chevron-2">⌄</span>
+                    </div>
+                    <div class="pollutant-description" id="desc-2">
+                        are synthetic chemicals that remain in the environment for a long time and bioaccumulate in
+                        living organisms.
+                    </div>
+                </div>
+            </div>
+
+            <div class="pollutant-item">
+                <div class="pollutant-row">
+                    <div class="pollutant-label" onclick="toggleDropdown(3)">
+                        <span class="pollutant-title">Bioaerosols</span>
+                        <span class="chevron" id="chevron-3">⌄</span>
+                    </div>
+                    <div class="pollutant-description" id="desc-3">
+                        are airborne particles of biological origin such as virus, bacteria, fungi, pollen and
+                        endotoxins, which can impact health but are NOT chemical pollutants.
+                    </div>
+                </div>
+            </div>
+
+            <p class="note-text">
+                Please note that individuals with pre-existing conditions and comorbidities are affected by all
+                pollutants, depending upon their physiology.
+            </p>
+
+            <p class="note-text">
+                Although some air pollutants are solely anthropogenic, many may also result from natural processes.
+            </p>
+        </div>
+
+        <!-- /* Dropdown --------------------------------------------------------*/ -->
+
+    </div>
+
+
+    <div class="container2">
+        <div class="header">
+            <p class="header-subtitle">Invisible, Indestructible, and Bioaccumulating Inside You:</p>
+            <h1 class="header-title">The Most Dangerous Pollutants of the 21st Century</h1>
+        </div>
+
+        <h2 class="section-title2">PFAS (Per- and Polyfluoroalkyl Substances)</h2>
+
+        <p class="content-text">
+            <span class="bold-text">PFAS</span> are a group of thousands of man-made chemicals with a strong
+            carbon-fluorine bond, making them resistant to environmental degradation due to heat, grease, and water.
+            They are called <span class="bold-text">"forever chemicals"</span> due to their persistence, and have been
+            under use in many common products like nonstick cookware, water-resistant fabrics, hygiene products,
+            cosmetics and food packaging, since the 1950s.
+        </p>
+
+        <p class="content-text">
+            People are exposed through contaminated food, water, and contact with contaminated products. In the
+            semiconductor industry, which generates PFAS-laden wastewater, PFAS pose a unique challenge with
+            concentrations as high as <span class="bold-text">78,000 ppt</span> in wastewater streams, vastly exceeding
+            regulatory limits of <span class="bold-text">4ppt</span>.
+        </p>
+
+        <p class="content-text">
+            Studies show potential associations between PFAS exposure and various health effects, including altered
+            immune and thyroid function, liver disease, lipid and insulin dysregulation, kidney disease, adverse
+            reproductive and developmental outcomes and even <span class="bold-text">cancer</span> - liver, testicular
+            and pancreatic.
+        </p>
+
+        <div class="impact-section">
+            <h3 class="impact-title">PFAS Impact On Human Health</h3>
+
+            <div class="images-container">
+
+                <div class="image-box">
+                    <img src="/assets/images/i1.png" alt="PFAS Impact 1" style="width: 120%; height: 120%; object-fit: cover;">
+                </div>
+
+                <div class="image-box">
+                    <img src="/assets/images/i2.png" alt="PFAS Impact 2" style="width: 120%; height: 120%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+
+        <p class="content-text">
+            PFAs are found everywhere on Earth, even in Antarctica, and cover everything from air, land, water, plants
+            and every living creature including humans, resulting in a massive worldwide contamination. They <span
+                class="bold-text">bioaccumulate</span> in the environment and living organisms by binding to proteins in
+            the blood, liver, and other tissues, particularly for long-chain molecules. There are approximately <span
+                class="bold-text">18,000</span> types of PFAS, making it an extremely large and diverse class of
+            chemicals.
+        </p>
+
+        <p class="content-text">
+            PFAS are not banned or even regulated in India. While India is a party to the Stockholm Convention, which
+            includes restrictions on certain PFAS like PFOS, India has not adopted the amendment that would regulate
+            PFOS or other PFAS substances according to the International Pollutants Elimination Network (IPEN).
+        </p>
+
+
+        <h2 class="section-title2">Microplastics</h2>
+
+        <p class="content-text">
+            <span class="bold-text">Microplastics</span> are plastic particles less than 5 millimeters in size,
+            originating from primary sources like
+            cosmetics or the breakdown of larger plastic items, and are a major environmental and health concern.
+        </p>
+
+        <p class="content-text">
+            They enter ecosystems through sources like synthetic clothing, plastic products and tire wear and are found
+            in diverse environments, including oceans, air, and soil, and are ingested, inhaled or absorbed by humans
+            through contaminated food, water, and personal care products.
+        </p>
+
+        <p class="content-text">
+            MPs originate from various sources, including plastic waste, vehicle tires, synthetic textiles, and
+            personal-care products, and have been increasingly detected in human environments (including the food
+            chain), water, and air- and even found in the placenta.
+        </p>
+
+        <p class="content-text">
+            <span class="bold-text">Bioaccumulation</span> of MPs may harm human health, trigger inflammation, and cause
+            cellular stress. Evidence is mounting that MPs can have global consequences on the general population by
+            possibly inciting inflammatory responses leading to chronic diseases.
+            They can interfere with endocrine function, suppress immune responses, and serve as vectors for harmful
+            chemicals and pathogens
+        </p>
+
+        <p class="content-text">
+            Though the concrete links to certain diseases are still in limbo, it follows that MPs accumulating on and
+            within an organism is not good. Reduction in plastic pollution and additional research into toxicity will be
+            vital for reducing potential health risks that may not yet be fully understood with regard to its impact on
+            human well-being.
+        </p>
+
+        <h3 style="text-align: center; margin-top: 5rem;"> Potential Human Health Effects of Microplastics</h3>
+
+        <img src="/assets/images/last.png" class="lastImg" alt="image">
+
+    </div>
+<div class="space"></div>
+
+
+    <footer class="site-footer">
+        <div class="top-border"></div>
+
+        <div class="foot-top">
+
+            <!-- Left Column -->
+            <div class="foot-left">
+                <div class="logo-row">
+                    <img src="/assets/images/logo.png" alt="Company Logo" class="left-logo">
+
+                    <div class="title-group">
+                        <h2 class="main-title">Shoolin Systems Consulting Group</h2>
+                        <p class="sub-title">Environmental Products Division</p>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <p>
+                        <img src="https://www.iconpacks.net/icons/2/free-location-icon-2952-thumb.png" class="icon"
+                            alt="location-icon">
+                        55, 2nd floor, Lane 2, Westend Marg, Saidulajab, New Delhi - 110 030
+                    </p>
+
+                    <p class="highlight-text">
+                        <img src="https://www.iconpacks.net/icons/1/free-mail-icon-142-thumb.png" class="icon"
+                            alt="email-icon">
+                        contact@yourcompany.com
+                    </p>
+
+                    <p class="highlight-text phone">
+                        <img src="https://cdn-icons-png.flaticon.com/512/8274/8274171.png" class="icon"
+                            alt="phone-icon">
+                        +91 98765 43210
+                    </p>
+                </div>
+
+                <p class="cds-site">
+                    CDS Site:
+                    <a href="#">www.examplecds.com</a>
+                </p>
+            </div>
+
+            <!-- Right Column -->
+            <div class="foot-right">
+                <img src="/assets/images/logo2.png" alt="Right Logo" class="right-logo">
+
+                <p><a href="#">Company Video</a></p>
+                <p><a href="#">Product Animation</a></p>
+                <p><a href="#">AQI</a></p>
+                <p><a href="#">Site Map</a></p>
+
+                <p class="website-link"><a href="#">www.examplecompany.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="foot-bottom">
+            All rights reserved © 2025
+        </div>
+    </footer>
+
+
+ <script src="/assets/js/lastPage.js"></script> 
+</body>
+</html>

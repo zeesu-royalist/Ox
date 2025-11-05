@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.image-sections {
+  position: relative;
+  height: 400vh; /* jitni images hain utna scroll space */
+}
+
+.main {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+</style>
+<body>
+    <div class="image-sections">
+  <div class="main"><img src="https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg" alt=""></div>
+  <div class="main"><img src="https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg" alt=""></div>
+  <div class="main"><img src="https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg" alt=""></div>
+  <div class="main"><img src="https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg" alt=""></div>
+</div>
+
+
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+const sections = gsap.utils.toArray(".main");
+
+sections.forEach((section, i) => {
+  const next = sections[i + 1];
+
+  if (next) {
+    gsap.timeline({
+      scrollTrigger: {
+        trigger: next,
+        start: "top bottom", // jab next section bottom se enter kare
+        end: "top top",       // jab next section viewport ke top pe aa jaye
+        scrub: true,
+      }
+    }).to(section.querySelector("img"), {
+      scale: 1.05,    // thoda zoom (optional)
+      opacity: 0,     // pehle image dheere fade out
+      ease: "none",
+    });
+  }
+});
+
+</script>
+</body>
+</html>
